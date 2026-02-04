@@ -1,0 +1,89 @@
+🔹 Router0 Configuration (Center)
+Interface Configuration
+
+enable
+configure terminal
+
+interface g0/0
+ ip address 10.0.0.2 255.255.255.0
+ no shutdown
+
+interface g0/1
+ ip address 20.0.0.1 255.255.255.0
+ no shutdown
+
+interface g0/2
+ ip address 50.0.0.10 255.255.255.0
+ no shutdown
+
+Static Routing:
+ip route 40.0.0.0 255.255.255.0 10.0.0.1
+ip route 60.0.0.0 255.255.255.0 20.0.0.2
+
+DHCP Configuration:
+ip dhcp excluded-address 50.0.0.1 50.0.0.20
+ip dhcp pool LAN50
+ network 50.0.0.0 255.255.255.0
+ default-router 50.0.0.10
+ dns-server 8.8.8.8
+----------------------------------------------------------------------------------
+🔹 Router1 Configuration (Left)
+
+Interface Configuration
+
+enable
+configure terminal
+
+interface g0/0
+ ip address 10.0.0.1 255.255.255.0
+ no shutdown
+
+interface g0/1
+ ip address 30.0.0.1 255.255.255.0
+ no shutdown
+
+interface g0/2
+ ip address 40.0.0.10 255.255.255.0
+ no shutdown
+
+Static Routing:
+ip route 50.0.0.0 255.255.255.0 10.0.0.2
+ip route 60.0.0.0 255.255.255.0 30.0.0.2
+
+DHCP Configuration:
+ip dhcp excluded-address 40.0.0.1 40.0.0.20
+ip dhcp pool LAN40
+ network 40.0.0.0 255.255.255.0
+ default-router 40.0.0.10
+ dns-server 8.8.8.8
+
+-------------------------------------------------------------------------------------
+🔹 Router4 Configuration (Right)
+Interface Configuration
+
+enable
+configure terminal
+
+interface g0/0
+ ip address 20.0.0.2 255.255.255.0
+ no shutdown
+
+interface g0/1
+ ip address 30.0.0.2 255.255.255.0
+ no shutdown
+
+interface g0/2
+ ip address 60.0.0.10 255.255.255.0
+ no shutdown
+
+Static Routing:
+ip route 40.0.0.0 255.255.255.0 30.0.0.1
+ip route 50.0.0.0 255.255.255.0 20.0.0.1
+
+DHCP Configuration:
+ip dhcp excluded-address 60.0.0.1 60.0.0.20
+
+ip dhcp pool LAN60
+ network 60.0.0.0 255.255.255.0
+ default-router 60.0.0.10
+ dns-server 8.8.8.8
