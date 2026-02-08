@@ -94,5 +94,7 @@ Through Task 4, I gained:
 
 ---
 
-## 👤 Author
-**[Vishal A]**  
+## 👨‍🎓 Student Details
+- **Name:** Vishal A
+- **Department:** BE – Cyber Security
+- **Institution:** Mahendra Engineering College
