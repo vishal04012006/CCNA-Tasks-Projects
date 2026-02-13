@@ -86,14 +86,6 @@ Through Task 4, I gained:
 
 ---
 
-## 🚀 Future Enhancements
-- Implementation of Rapid PVST+
-- Multiple Spanning Tree (MST) configuration
-- VTP pruning
-- Integration of STP with EtherChannel
-
----
-
 ## 👨‍🎓 Student Details
 - **Name:** Vishal A
 - **Department:** BE – Cyber Security
