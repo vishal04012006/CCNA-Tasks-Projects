@@ -102,3 +102,10 @@ Through Task 5, I learned:
 - Basic event-driven automation logic
 - Centralized control of smart devices
 - Practical implementation of a smart security system
+
+---
+
+## 👨‍🎓 Student Details
+- **Name:** Vishal A
+- **Department:** BE – Cyber Security
+- **Institution:** Mahendra Engineering College
